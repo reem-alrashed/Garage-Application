@@ -1,0 +1,2 @@
+# GarageApplication
+This project aims overall to support the concept of selling and buying the used product when the owner does not need them anymore—providing customers with a straightforward process of not throwing the unused item in the garbage or keeping them in a warehouse. Throwing in the trash too much, cause pollution, which causes harm to humans, animals and the environment. Therefore, the target is creating an android mobile application that gives customers the ability to sell and buy pre-owned items. 
