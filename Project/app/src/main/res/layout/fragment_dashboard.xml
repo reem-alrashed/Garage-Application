@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingLL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme">
+
+
+    <Button
+        android:id="@+id/cart_page"
+        android:layout_width="56dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button"
+        android:drawableRight="@drawable/add_to_cart"
+        android:paddingRight="15dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <ImageView
+        android:id="@+id/categoryBooks"
+        android:layout_width="176dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/card"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryHome"
+        app:layout_constraintEnd_toStartOf="@+id/categoryHome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_dashboard"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/categoryHome"
+        android:layout_width="176dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/card"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/categoryFurnitures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_dashboard" />
+
+    <ImageView
+        android:id="@+id/categoryElectronic"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="39dp"
+        android:background="@drawable/card"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryFurnitures"
+        app:layout_constraintEnd_toStartOf="@+id/categoryFurnitures"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/categoryFurnitures"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/categoryFurnitures"
+        android:layout_width="178dp"
+        android:layout_height="169dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="132dp"
+        android:background="@drawable/card"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/product"
+        android:layout_width="108dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/categoryBooks"
+        app:layout_constraintEnd_toEndOf="@+id/categoryBooks"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/electronic"
+        app:layout_constraintTop_toBottomOf="@+id/text_dashboard"
+        app:layout_constraintVertical_bias="0.112"
+        app:srcCompat="@drawable/books" />
+
+    <TextView
+        android:id="@+id/bookTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="الكتب"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryBooks"
+        app:layout_constraintEnd_toStartOf="@+id/homeAccessTV"
+        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintStart_toStartOf="@+id/categoryBooks"
+        app:layout_constraintTop_toBottomOf="@+id/product"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/home_access"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryHome"
+        app:layout_constraintEnd_toEndOf="@+id/categoryHome"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/categoryHome"
+        app:layout_constraintTop_toTopOf="@+id/categoryHome"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/access" />
+
+    <TextView
+        android:id="@+id/homeAccessTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="28dp"
+        android:text="ديكورات المنزل"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintStart_toStartOf="@+id/categoryHome"
+        app:layout_constraintTop_toTopOf="@+id/categoryHome" />
+
+    <ImageView
+        android:id="@+id/electronic"
+        android:layout_width="190dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryElectronic"
+        app:layout_constraintEnd_toEndOf="@+id/categoryElectronic"
+        app:layout_constraintEnd_toStartOf="@+id/homeApplianceTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/electronics" />
+
+    <TextView
+        android:id="@+id/electronicTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="75dp"
+        android:text="الإلكترونيات"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryElectronic"
+        app:layout_constraintEnd_toStartOf="@+id/categoryFurnitures"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/categoryElectronic"
+        app:layout_constraintVertical_bias="0.931" />
+
+    <ImageView
+        android:id="@+id/homeAppliance"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeApplianceTV"
+        app:layout_constraintEnd_toEndOf="@+id/categoryFurnitures"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/categoryFurnitures"
+        app:layout_constraintTop_toTopOf="@+id/categoryFurnitures"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/home_appliance" />
+
+    <TextView
+        android:id="@+id/homeApplianceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="8dp"
+        android:text="أجهزة المنزل"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/categoryFurnitures"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/electronicTV"
+        app:layout_constraintTop_toTopOf="@+id/categoryFurnitures"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:text="أهلا وسهلًا بك بتطبيق بسطة!"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/settingLL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

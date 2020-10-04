@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme">
+
+
+<Switch
+        android:id="@+id/simpleSwitch"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:checked="true"
+        android:layoutDirection="rtl"
+        android:text="الإشعارات"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="100dp"
+        android:text="تسجيل الخروج"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>
